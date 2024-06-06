@@ -1,0 +1,90 @@
+@use "./subStyle/variable.scss" as *;
+@use "./subStyle/mixins.scss" as *;
+// GOOGLE FONT
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+
+body {
+  font-family: "Questrial", sans-serif;
+  letter-spacing: 1.3px;
+  word-spacing: 2px;
+  background-color: white !important;
+  h6,
+  h3,
+  h2 {
+    line-height: 2rem !important;
+  }
+  .container {
+    padding: 0 100px;
+  }
+  .title {
+    color: #494c4e;
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  // prova
+  background-color: $color-text-primary;
+  li {
+    list-style-type: none;
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+  .btn-green {
+    background-color: $bg-color-green;
+    color: $bg-color-cream;
+    border-radius: 50px;
+    display: inline-block;
+    padding: 10px 30px;
+    &:hover {
+      background-color: transparent;
+      box-shadow: inset 0px 0px 0px 3px $bg-color-green;
+      color: $bg-color-green;
+    }
+  }
+
+  .btn-grey {
+    background-color: transparent;
+    color: #799aae;
+    border-radius: 50px;
+    display: inline-block;
+    padding: 10px 30px;
+    box-shadow: inset 0px 0px 0px 3px #799aae;
+    &:hover {
+      box-shadow: inset 0px 0px 0px 0px #799aae;
+      background-color: #799aae;
+      color: white;
+    }
+  }
+
+  .card-form {
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 6px 11px 17px 0px #00000040;
+    text-align: center;
+    background-color: white;
+    color: #929aa3;
+    h2 {
+      font-weight: 900;
+      color: #494c4e;
+      stroke-linecap: ce;
+    }
+    // & > * {
+    //   margin: 30px auto;
+    // }
+  }
+
+  .card-info {
+    position: relative;
+    border-radius: 15px;
+    box-shadow: inset 0px 7px 0px 0px $bg-color-green,
+      0px 12px 20px 0px #00000040;
+    text-align: center;
+    background-color: white;
+    color: #929aa3;
+    h2 {
+      font-weight: 900;
+      color: #494c4e;
+    }
+  }
+}

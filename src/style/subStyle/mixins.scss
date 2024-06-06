@@ -1,0 +1,7 @@
+@mixin flex($type: "between") {
+  display: flex;
+  align-items: center;
+  @if ($type== "between") {
+    justify-content: space-between;
+  }
+}
